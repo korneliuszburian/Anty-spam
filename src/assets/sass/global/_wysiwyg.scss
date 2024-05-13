@@ -1,0 +1,153 @@
+/**
+ * _wysiwyg.css
+ * critical styles
+ */
+
+#{$wysiwyg} {
+	& > *:first-child {
+		margin-top: 0;
+	}
+
+	:is(p) + p {
+		margin-top: 24px;
+	}
+
+	p:not(.h1, .h2, .h3, .h4, .h5, .h6, .p, .p1) {
+		color: var(--black-600, #515151);
+		font-size: 1.15em;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 24px;
+		letter-spacing: -0.32px;
+	}
+
+	li:not(:first-child) {
+		margin-top: 24px;
+	}
+
+	a {
+		color: var(--primary-500);
+		text-decoration: underline;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	ol,
+	ul {
+		margin-block: 24px 20px;
+	}
+
+	ol {
+		max-width: calc(100% - 7rem);
+		margin-left: 3.5rem;
+		padding: 0;
+		position: relative;
+	}
+
+	ul {
+		list-style-type: none;
+		padding-left: 0;
+
+		& > li {
+			position: relative;
+			color: var(--black-800);
+		}
+	}
+}
+
+details > summary {
+	list-style: none;
+}
+
+details > summary::marker, /* Latest Chrome, Edge, Firefox */ 
+  details > summary::-webkit-details-marker /* Safari */ {
+	display: none;
+}
+
+strong {
+	color: var(--black-800);
+}
+
+p {
+	font-weight: 400;
+	line-height: 150%;
+}
+
+.p {
+	margin: 0;
+	padding: 0;
+	font-size: 1.1428571428571428em;
+	line-height: 24px;
+	letter-spacing: -0.32px;
+	color: var(--black-800);
+}
+
+.p1 {
+	margin: 0;
+	padding: 0;
+	line-height: 18.96px;
+	letter-spacing: -0.253px;
+	font-size: 0.875em;
+	color: var(--black-800);
+}
+
+.ls--small {
+	letter-spacing: -0.28px;
+}
+
+.ls {
+	letter-spacing: -0.72px;
+}
+
+.ls--big {
+	letter-spacing: -1.025px;
+}
+
+.h1,
+h1,
+.h2,
+h2,
+.h3,
+h3,
+.h4,
+h4,
+.h5,
+h5,
+.h6,
+h6 {
+	word-break: auto-phrase;
+}
+
+.feat {
+	font-family: "Montserrat";
+	color: var(--green-1, #469d38);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+}
+
+.reg {
+	font-size: 0.903em;
+	color: var(--black-800);
+}
+
+.mid {
+	font-size: 1.285em;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+	margin: 0;
+}

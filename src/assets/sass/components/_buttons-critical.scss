@@ -1,0 +1,76 @@
+/**
+ * _buttons.css
+ * styles for button, critical
+ */
+
+#{$button} {
+    display: inline-flex;
+	align-items: center;
+	justify-items: center;
+	cursor: pointer;
+	position: relative;
+	text-decoration: none;
+	transition: background-color 0.2s, box-shadow 0.2s;
+	overflow: hidden;
+	position: relative;
+	white-space: nowrap;
+	box-shadow: none;
+    border: none;
+
+    &--primary {
+        padding: 12px 20px;
+
+        &:hover {
+            background-color: var(--color-light);
+        }
+    }
+
+    &[data-type="blank"] {
+        padding: 12px 20px;
+		background: var(--color-light);
+		color: var(--color-dark);
+		border: 2px solid var(--color-primary);
+
+		&:hover {
+			background-color: var(--color-light);
+		}
+	}
+
+    &[data-type="hero"] {
+        padding: 5px 14px;
+        color: var(--color-dark);
+        background: var(--color-light);
+        border: 1px solid #DDD;
+
+        &.active{
+            color: var(--color-light);
+            background: var(--color-primary);
+        }
+    }
+
+    &--swipe {
+        width: 40px;
+        height: 40px;
+        padding: 8px;
+        justify-content: center;
+        gap: 8px;
+        background: var(--color-primary);
+    }
+
+    &--submit{
+        flex-shrink: 0;
+    }
+
+    &--fit{
+        width: fit-content;
+    }
+
+    &--gap {
+		gap: 12px;
+	}
+
+    &:hover {
+		box-shadow: var(--generic-shadow);
+		background: var(--color-primary-light);
+	}
+}

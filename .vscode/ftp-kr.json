@@ -1,0 +1,21 @@
+{
+	"host": "master.proudhost.eu",
+	"protocol": "ftp",
+	"username": "doorknob0485",
+	"password": "G&7d%f^&2&g^fp!G#q35",
+	"remotePath": "wp-content/plugins",
+	"port": 21,
+	"localBasePath": "src",
+	"fileNameEncoding": "utf8",
+	"autoUpload": true,
+	"autoDelete": false,
+	"ignoreRemoteModification": true,
+	"autoDownload": false,
+	"ignore": [
+		".git",
+		"/.vscode",
+		".gitignore",
+		".gitattributes",
+		"*.code-workspace"
+	]
+}

@@ -1,0 +1,18 @@
+/**
+ * _animation-scroll.scss
+ */
+
+$ams: ".ams";
+#{$ams} {
+  opacity: 0;
+  transition: opacity $transition, transform $transition !important;
+  &[data-scroll="move"] {
+    transform: translateY(50px);
+    &#{$ams}--s {
+      transform: translateY(0);
+    }
+  }
+  &:not([data-scroll]) {
+    opacity: 1;
+  }
+}

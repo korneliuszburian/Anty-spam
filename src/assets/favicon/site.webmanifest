@@ -1,0 +1,11 @@
+{
+	"name": "Ekologus.pl",
+	"short_name": "Ekologus",
+	"icons": [
+		{
+			"src": "/wp-content/themes/rekurencja-theme/assets/favicon/android-chrome-192x192.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		}
+	]
+}

@@ -1,0 +1,22 @@
+#{$readMore} {
+	margin-top: 15px;
+
+	&__btn {
+		gap: 6px;
+		cursor: pointer;
+	}
+
+	&--hid {
+		margin: 0 !important;
+		visibility: hidden;
+		max-height: 0;
+		opacity: 0;
+	}
+
+	&--vis {
+		margin-top: 10px;
+		visibility: visible;
+		opacity: 1;
+		transition: margin 200ms cubic-bezier(0.16, 1, 0.3, 1), max-height 300ms cubic-bezier(0.16, 1, 0.3, 1), opacity 450ms cubic-bezier(0.16, 1, 0.3, 1);
+	}
+}

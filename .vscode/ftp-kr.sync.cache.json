@@ -1,0 +1,1686 @@
+{
+  "ftp://doorknob0485@master.proudhost.eu:21": {
+    "index.php": {
+      "type": "-",
+      "size": 405,
+      "lmtime": 0,
+      "modified": false
+    },
+    "license.txt": {
+      "type": "-",
+      "size": 19915,
+      "lmtime": 0,
+      "modified": false
+    },
+    "readme.html": {
+      "type": "-",
+      "size": 7401,
+      "lmtime": 0,
+      "modified": false
+    },
+    "wp-activate.php": {
+      "type": "-",
+      "size": 7387,
+      "lmtime": 0,
+      "modified": false
+    },
+    "wp-admin": {},
+    "wp-blog-header.php": {
+      "type": "-",
+      "size": 351,
+      "lmtime": 0,
+      "modified": false
+    },
+    "wp-comments-post.php": {
+      "type": "-",
+      "size": 2323,
+      "lmtime": 0,
+      "modified": false
+    },
+    "wp-config-sample.php": {
+      "type": "-",
+      "size": 3012,
+      "lmtime": 0,
+      "modified": false
+    },
+    "wp-config.php": {
+      "type": "-",
+      "size": 3264,
+      "lmtime": 0,
+      "modified": false
+    },
+    "wp-content": {
+      "themes": {
+        "blank-theme": {
+          ".DS_Store": {
+            "type": "-",
+            "size": 6148,
+            "lmtime": 1715587773311.4456,
+            "modified": false
+          },
+          "404.php": {
+            "type": "-",
+            "size": 1061,
+            "lmtime": 1715587754444.2576,
+            "modified": false
+          },
+          "assets": {
+            ".DS_Store": {
+              "type": "-",
+              "size": 6148,
+              "lmtime": 1715587754934.9663,
+              "modified": false
+            },
+            "css": {
+              "admin.css": {
+                "type": "-",
+                "size": 181,
+                "lmtime": 1715587754981.955,
+                "modified": false
+              },
+              "admin.css.map": {
+                "type": "-",
+                "size": 158,
+                "lmtime": 1715587755025.8357,
+                "modified": false
+              },
+              "admin_wysiwyg.css": {
+                "type": "-",
+                "size": 0,
+                "lmtime": 1715587755084.513,
+                "modified": false
+              },
+              "critical.css": {
+                "type": "-",
+                "size": 34267,
+                "lmtime": 1715587755153.1306,
+                "modified": false
+              },
+              "critical.css.map": {
+                "type": "-",
+                "size": 8714,
+                "lmtime": 1715587755197.8794,
+                "modified": false
+              },
+              "custom-editor-style.css.map": {
+                "type": "-",
+                "size": 0,
+                "lmtime": 1715587755247.1028,
+                "modified": false
+              },
+              "normalize-css-8.0.1": {
+                "normalize-rekurencja.css": {
+                  "type": "-",
+                  "size": 7163,
+                  "lmtime": 1715587755435.5405,
+                  "modified": false
+                },
+                "normalize-rekurencja.min.css": {
+                  "type": "-",
+                  "size": 1560,
+                  "lmtime": 1715587755481.826,
+                  "modified": false
+                },
+                "normalize.css": {
+                  "type": "-",
+                  "size": 6359,
+                  "lmtime": 1715587755526.3938,
+                  "modified": false
+                },
+                "normalize.min.css": {
+                  "type": "-",
+                  "size": 1611,
+                  "lmtime": 1715587755570.256,
+                  "modified": false
+                }
+              },
+              "sections": {
+                "gallery-critical.css.map": {
+                  "type": "-",
+                  "size": 97,
+                  "lmtime": 1715587755615.2307,
+                  "modified": false
+                }
+              },
+              "style.css": {
+                "type": "-",
+                "size": 13238,
+                "lmtime": 1715587755301.2673,
+                "modified": false
+              },
+              "style.css.map": {
+                "type": "-",
+                "size": 2792,
+                "lmtime": 1715587755344.6082,
+                "modified": false
+              },
+              "test.css.map": {
+                "type": "-",
+                "size": 0,
+                "lmtime": 1715587755385.4243,
+                "modified": false
+              }
+            },
+            "favicon": {
+              "android-chrome-192x192.png": {
+                "type": "-",
+                "size": 22491,
+                "lmtime": 1715587755680.934,
+                "modified": false
+              },
+              "browserconfig.xml": {
+                "type": "-",
+                "size": 313,
+                "lmtime": 1715587755728.3074,
+                "modified": false
+              },
+              "favicon.ico": {
+                "type": "-",
+                "size": 152126,
+                "lmtime": 1715587755805.4856,
+                "modified": false
+              },
+              "site.webmanifest": {
+                "type": "-",
+                "size": 226,
+                "lmtime": 1715587755849.8042,
+                "modified": false
+              }
+            },
+            "fonts": {
+              "Lato-Regular.ttf": {
+                "type": "-",
+                "size": 75152,
+                "lmtime": 1715587755908.549,
+                "modified": false
+              },
+              "Montserrat-Bold.woff2": {
+                "type": "-",
+                "size": 86804,
+                "lmtime": 1715587755979.7656,
+                "modified": false
+              },
+              "Montserrat-Regular.woff2": {
+                "type": "-",
+                "size": 86900,
+                "lmtime": 1715587756039.1333,
+                "modified": false
+              },
+              "Montserrat-SemiBold.woff2": {
+                "type": "-",
+                "size": 86544,
+                "lmtime": 1715587756103.5413,
+                "modified": false
+              },
+              "lato-bold.woff2": {
+                "type": "-",
+                "size": 24808,
+                "lmtime": 1715587756157.858,
+                "modified": false
+              },
+              "lato-regular.woff2": {
+                "type": "-",
+                "size": 24416,
+                "lmtime": 1715587756207.1565,
+                "modified": false
+              },
+              "test.woff2": {
+                "type": "-",
+                "size": 227380,
+                "lmtime": 1715587756291.0027,
+                "modified": false
+              }
+            },
+            "glightbox-3.2.0": {
+              "glightbox.min.js": {
+                "type": "-",
+                "size": 55880,
+                "lmtime": 1715587756350.9175,
+                "modified": false
+              }
+            },
+            "img": {
+              "background.svg": {
+                "type": "-",
+                "size": 378410,
+                "lmtime": 1715587756427.1707,
+                "modified": false
+              },
+              "cursor.webp": {
+                "type": "-",
+                "size": 1888,
+                "lmtime": 1715587756470.6226,
+                "modified": false
+              },
+              "loader.gif": {
+                "type": "-",
+                "size": 72191,
+                "lmtime": 1715587756532.162,
+                "modified": false
+              },
+              "loader.svg": {
+                "type": "-",
+                "size": 521,
+                "lmtime": 1715587756586.4983,
+                "modified": false
+              },
+              "logo.png": {
+                "type": "-",
+                "size": 17928,
+                "lmtime": 1715587756640.8862,
+                "modified": false
+              },
+              "logo.svg": {
+                "type": "-",
+                "size": 8024,
+                "lmtime": 1715587756694.2551,
+                "modified": false
+              }
+            },
+            "js": {
+              "accessibilityScripts.js": {
+                "type": "-",
+                "size": 973,
+                "lmtime": 1715587756742.6768,
+                "modified": false
+              },
+              "accessibilityScripts.min.js": {
+                "type": "-",
+                "size": 755,
+                "lmtime": 1715587756782.9102,
+                "modified": false
+              },
+              "adminFlexibleShrink.js": {
+                "type": "-",
+                "size": 951,
+                "lmtime": 1715587756826.0505,
+                "modified": false
+              },
+              "adminFlexibleShrink.min.js": {
+                "type": "-",
+                "size": 463,
+                "lmtime": 1715587756884.4402,
+                "modified": false
+              },
+              "apply-style.js": {
+                "type": "-",
+                "size": 1328,
+                "lmtime": 1715587756937.107,
+                "modified": false
+              },
+              "apply-style.min.js": {
+                "type": "-",
+                "size": 680,
+                "lmtime": 1715587756992.1934,
+                "modified": false
+              },
+              "bazaWiedzySection.js": {
+                "type": "-",
+                "size": 1433,
+                "lmtime": 1715587757053.8481,
+                "modified": false
+              },
+              "bazaWiedzySection.min.js": {
+                "type": "-",
+                "size": 859,
+                "lmtime": 1715587757102.5244,
+                "modified": false
+              },
+              "cookieConsentBar.js": {
+                "type": "-",
+                "size": 3288,
+                "lmtime": 1715587757143.583,
+                "modified": false
+              },
+              "cookieConsentBar.min.js": {
+                "type": "-",
+                "size": 1250,
+                "lmtime": 1715587757191.7673,
+                "modified": false
+              },
+              "custom-style-selector.js": {
+                "type": "-",
+                "size": 828,
+                "lmtime": 1715587757234.2,
+                "modified": false
+              },
+              "custom-style-selector.min.js": {
+                "type": "-",
+                "size": 495,
+                "lmtime": 1715587757278.942,
+                "modified": false
+              },
+              "custom-tinymce-text.js": {
+                "type": "-",
+                "size": 3247,
+                "lmtime": 1715587757323.9626,
+                "modified": false
+              },
+              "custom-tinymce-text.min.js": {
+                "type": "-",
+                "size": 853,
+                "lmtime": 1715587757367.1245,
+                "modified": false
+              },
+              "custom-tinymce-visual.js": {
+                "type": "-",
+                "size": 1169,
+                "lmtime": 1715587757414.3003,
+                "modified": false
+              },
+              "custom-tinymce-visual.min.js": {
+                "type": "-",
+                "size": 656,
+                "lmtime": 1715587757458.7651,
+                "modified": false
+              },
+              "iframeScripts.js": {
+                "type": "-",
+                "size": 0,
+                "lmtime": 1715587757565.8992,
+                "modified": false
+              },
+              "iframeScripts.min.js": {
+                "type": "-",
+                "size": 0,
+                "lmtime": 1715587757614.4866,
+                "modified": false
+              },
+              "menuHamburger.js": {
+                "type": "-",
+                "size": 1932,
+                "lmtime": 1715587757656.9521,
+                "modified": false
+              },
+              "menuHamburger.min.js": {
+                "type": "-",
+                "size": 1150,
+                "lmtime": 1715587757703.361,
+                "modified": false
+              },
+              "navigationScripts.js": {
+                "type": "-",
+                "size": 1634,
+                "lmtime": 1715587757746.3218,
+                "modified": false
+              },
+              "navigationScripts.min.js": {
+                "type": "-",
+                "size": 1125,
+                "lmtime": 1715587757789.5554,
+                "modified": false
+              },
+              "opinionsScripts.js": {
+                "type": "-",
+                "size": 611,
+                "lmtime": 1715587757843.8936,
+                "modified": false
+              },
+              "opinionsScripts.min.js": {
+                "type": "-",
+                "size": 328,
+                "lmtime": 1715587757886.4656,
+                "modified": false
+              },
+              "paddingScript.js": {
+                "type": "-",
+                "size": 293,
+                "lmtime": 1715587757936.4595,
+                "modified": false
+              },
+              "paddingScript.min.js": {
+                "type": "-",
+                "size": 223,
+                "lmtime": 1715587757979.7026,
+                "modified": false
+              },
+              "priceListOpening.js": {
+                "type": "-",
+                "size": 1351,
+                "lmtime": 1715587758023.7424,
+                "modified": false
+              },
+              "priceListOpening.min.js": {
+                "type": "-",
+                "size": 792,
+                "lmtime": 1715587758064.9763,
+                "modified": false
+              },
+              "quoteFormScripts.js": {
+                "type": "-",
+                "size": 1972,
+                "lmtime": 1715587758112.9785,
+                "modified": false
+              },
+              "quoteFormScripts.min.js": {
+                "type": "-",
+                "size": 923,
+                "lmtime": 1715587758154.8008,
+                "modified": false
+              },
+              "readMore.js": {
+                "type": "-",
+                "size": 2059,
+                "lmtime": 1715587758196.8584,
+                "modified": false
+              },
+              "readMore.min.js": {
+                "type": "-",
+                "size": 1039,
+                "lmtime": 1715587758243.9053,
+                "modified": false
+              },
+              "runGtag.js": {
+                "type": "-",
+                "size": 2380,
+                "lmtime": 1715587758286.7356,
+                "modified": false
+              },
+              "runGtag.min.js": {
+                "type": "-",
+                "size": 1376,
+                "lmtime": 1715587758332.376,
+                "modified": false
+              },
+              "servicesScripts.js": {
+                "type": "-",
+                "size": 1589,
+                "lmtime": 1715587758374.8486,
+                "modified": false
+              },
+              "servicesScripts.min.js": {
+                "type": "-",
+                "size": 819,
+                "lmtime": 1715587758429.8835,
+                "modified": false
+              },
+              "splide-init": {
+                "aboutSplide.js": {
+                  "type": "-",
+                  "size": 642,
+                  "lmtime": 1715587758674.5693,
+                  "modified": false
+                },
+                "aboutSplide.min.js": {
+                  "type": "-",
+                  "size": 455,
+                  "lmtime": 1715587758727.5168,
+                  "modified": false
+                }
+              },
+              "updateHtmlNoJs.js": {
+                "type": "-",
+                "size": 118,
+                "lmtime": 1715587758476.3662,
+                "modified": false
+              },
+              "updateHtmlNoJs.min.js": {
+                "type": "-",
+                "size": 103,
+                "lmtime": 1715587758528.9126,
+                "modified": false
+              },
+              "utilities.js": {
+                "type": "-",
+                "size": 1613,
+                "lmtime": 1715587758576.1792,
+                "modified": false
+              },
+              "utilities.min.js": {
+                "type": "-",
+                "size": 951,
+                "lmtime": 1715587758624.951,
+                "modified": false
+              }
+            },
+            "lazysizes-5.3.2": {
+              "lazysizes.min.js": {
+                "type": "-",
+                "size": 7862,
+                "lmtime": 1715587758773.2153,
+                "modified": false
+              },
+              "ls.optimumx.min.js": {
+                "type": "-",
+                "size": 2712,
+                "lmtime": 1715587758818.8142,
+                "modified": false
+              }
+            },
+            "sass": {
+              ".DS_Store": {
+                "type": "-",
+                "size": 10244,
+                "lmtime": 1715587758865.3833,
+                "modified": false
+              },
+              "_mixins.scss": {
+                "type": "-",
+                "size": 2069,
+                "lmtime": 1715587758909.6775,
+                "modified": false
+              },
+              "_variables.scss": {
+                "type": "-",
+                "size": 2567,
+                "lmtime": 1715587758954.5415,
+                "modified": false
+              },
+              "admin.css.map": {
+                "type": "-",
+                "size": 269,
+                "lmtime": 1715587758995.2957,
+                "modified": false
+              },
+              "admin.scss": {
+                "type": "-",
+                "size": 305,
+                "lmtime": 1715587759043.0808,
+                "modified": false
+              },
+              "components": {
+                ".DS_Store": {
+                  "type": "-",
+                  "size": 10244,
+                  "lmtime": 1715587759275.7498,
+                  "modified": false
+                },
+                "_buttons-critical.scss": {
+                  "type": "-",
+                  "size": 1464,
+                  "lmtime": 1715587759319.2412,
+                  "modified": false
+                },
+                "_buttons.scss": {
+                  "type": "-",
+                  "size": 105,
+                  "lmtime": 1715587759369.0579,
+                  "modified": false
+                },
+                "_content-block-critical.scss": {
+                  "type": "-",
+                  "size": 6948,
+                  "lmtime": 1715587759415.9116,
+                  "modified": false
+                },
+                "_content-block.scss": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1715587759466.122,
+                  "modified": false
+                },
+                "_heading-critical.scss": {
+                  "type": "-",
+                  "size": 1055,
+                  "lmtime": 1715587759509.5813,
+                  "modified": false
+                },
+                "_heading.scss": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1715587759555.8132,
+                  "modified": false
+                },
+                "_hero-critical.scss": {
+                  "type": "-",
+                  "size": 302,
+                  "lmtime": 1715587759600.3687,
+                  "modified": false
+                },
+                "_hero.scss": {
+                  "type": "-",
+                  "size": 22,
+                  "lmtime": 1715587759656.635,
+                  "modified": false
+                },
+                "_images.scss": {
+                  "type": "-",
+                  "size": 657,
+                  "lmtime": 1715587759697.7798,
+                  "modified": false
+                },
+                "_marquee-critical.scss": {
+                  "type": "-",
+                  "size": 1323,
+                  "lmtime": 1715587759749.3152,
+                  "modified": false
+                },
+                "_marquee.scss": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1715587759792.149,
+                  "modified": false
+                },
+                "_offer.scss": {
+                  "type": "-",
+                  "size": 723,
+                  "lmtime": 1715587759838.1482,
+                  "modified": false
+                },
+                "_read-more.scss": {
+                  "type": "-",
+                  "size": 393,
+                  "lmtime": 1715587759880.207,
+                  "modified": false
+                },
+                "_reviews.scss": {
+                  "type": "-",
+                  "size": 1031,
+                  "lmtime": 1715587759925.1694,
+                  "modified": false
+                },
+                "_splide.scss": {
+                  "type": "-",
+                  "size": 1448,
+                  "lmtime": 1715587759987.2598,
+                  "modified": false
+                }
+              },
+              "critical.css.map": {
+                "type": "-",
+                "size": 22352,
+                "lmtime": 1715587759093.085,
+                "modified": false
+              },
+              "critical.scss": {
+                "type": "-",
+                "size": 701,
+                "lmtime": 1715587759140.327,
+                "modified": false
+              },
+              "form": {
+                "_form-critical.scss": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1715587760031.2766,
+                  "modified": false
+                },
+                "_form.scss": {
+                  "type": "-",
+                  "size": 3300,
+                  "lmtime": 1715587760083.8694,
+                  "modified": false
+                }
+              },
+              "global": {
+                "_XXXanimation-scroll.scss": {
+                  "type": "-",
+                  "size": 326,
+                  "lmtime": 1715587760135.2932,
+                  "modified": false
+                },
+                "_fonts.scss": {
+                  "type": "-",
+                  "size": 785,
+                  "lmtime": 1715587760180.3018,
+                  "modified": false
+                },
+                "_global-critical.scss": {
+                  "type": "-",
+                  "size": 22494,
+                  "lmtime": 1715587760231.5835,
+                  "modified": false
+                },
+                "_global.scss": {
+                  "type": "-",
+                  "size": 1435,
+                  "lmtime": 1715587760279.8804,
+                  "modified": false
+                },
+                "_wysiwyg.scss": {
+                  "type": "-",
+                  "size": 1939,
+                  "lmtime": 1715587760328.2546,
+                  "modified": false
+                }
+              },
+              "other": {
+                "_cf7-5.8.3.scss": {
+                  "type": "-",
+                  "size": 3077,
+                  "lmtime": 1715587760376.3423,
+                  "modified": false
+                }
+              },
+              "sections": {
+                ".DS_Store": {
+                  "type": "-",
+                  "size": 6148,
+                  "lmtime": 1715587760425.2444,
+                  "modified": false
+                },
+                "_about-critical.scss": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1715587760468.611,
+                  "modified": false
+                },
+                "_about.scss": {
+                  "type": "-",
+                  "size": 294,
+                  "lmtime": 1715587760515.6387,
+                  "modified": false
+                },
+                "_cta-critical.scss": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1715587760570.0122,
+                  "modified": false
+                },
+                "_cta.scss": {
+                  "type": "-",
+                  "size": 248,
+                  "lmtime": 1715587760612.273,
+                  "modified": false
+                },
+                "_footer-critical.scss": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1715587760668.9126,
+                  "modified": false
+                },
+                "_footer.scss": {
+                  "type": "-",
+                  "size": 215,
+                  "lmtime": 1715587760714.2996,
+                  "modified": false
+                },
+                "_navigation-critical.scss": {
+                  "type": "-",
+                  "size": 12582,
+                  "lmtime": 1715587760758.8403,
+                  "modified": false
+                },
+                "_newsletter-critical.scss": {
+                  "type": "-",
+                  "size": 0,
+                  "lmtime": 1715587760802.5332,
+                  "modified": false
+                },
+                "_newsletter.scss": {
+                  "type": "-",
+                  "size": 78,
+                  "lmtime": 1715587760846.1736,
+                  "modified": false
+                }
+              },
+              "style.css.map": {
+                "type": "-",
+                "size": 9088,
+                "lmtime": 1715587759185.472,
+                "modified": false
+              },
+              "style.scss": {
+                "type": "-",
+                "size": 637,
+                "lmtime": 1715587759232.078,
+                "modified": false
+              }
+            },
+            "splide-4.1.3": {
+              "splide-core.min.css": {
+                "type": "-",
+                "size": 2054,
+                "lmtime": 1715587760894.8489,
+                "modified": false
+              },
+              "splide-extension-grid.min.js": {
+                "type": "-",
+                "size": 6786,
+                "lmtime": 1715587760942.036,
+                "modified": false
+              },
+              "splide.min.css": {
+                "type": "-",
+                "size": 5002,
+                "lmtime": 1715587760996.738,
+                "modified": false
+              },
+              "splide.min.js": {
+                "type": "-",
+                "size": 29708,
+                "lmtime": 1715587761049.0989,
+                "modified": false
+              }
+            }
+          },
+          "category.php": {
+            "type": "-",
+            "size": 788,
+            "lmtime": 1715587754486.6394,
+            "modified": false
+          },
+          "footer.php": {
+            "type": "-",
+            "size": 116,
+            "lmtime": 1715587890701.9902,
+            "modified": false
+          },
+          "functions": {
+            "acf": {
+              "class-acf-location-post-has-children.php": {
+                "type": "-",
+                "size": 1049,
+                "lmtime": 1715587762016.844,
+                "modified": false
+              },
+              "class-acf-location-post-parent-level.php": {
+                "type": "-",
+                "size": 972,
+                "lmtime": 1715587762062.449,
+                "modified": false
+              }
+            },
+            "acf_config.php": {
+              "type": "-",
+              "size": 203,
+              "lmtime": 1715587761094.4292,
+              "modified": false
+            },
+            "acf_validator.php": {
+              "type": "-",
+              "size": 105,
+              "lmtime": 1715587761137.3425,
+              "modified": false
+            },
+            "add_default_og_image.php": {
+              "type": "-",
+              "size": 382,
+              "lmtime": 1715587761192.8606,
+              "modified": false
+            },
+            "cf7_config.php": {
+              "type": "-",
+              "size": 1721,
+              "lmtime": 1715587761238.0498,
+              "modified": false
+            },
+            "cpt_config.php": {
+              "type": "-",
+              "size": 0,
+              "lmtime": 1715587810446.8916,
+              "modified": false
+            },
+            "disable_comments.php": {
+              "type": "-",
+              "size": 881,
+              "lmtime": 1715587761326.8083,
+              "modified": false
+            },
+            "disable_emojis.php": {
+              "type": "-",
+              "size": 495,
+              "lmtime": 1715587761370.35,
+              "modified": false
+            },
+            "disable_feed.php": {
+              "type": "-",
+              "size": 1693,
+              "lmtime": 1715587761414.2896,
+              "modified": false
+            },
+            "disable_search.php": {
+              "type": "-",
+              "size": 186,
+              "lmtime": 1715587761457.3413,
+              "modified": false
+            },
+            "enable_svg.php": {
+              "type": "-",
+              "size": 744,
+              "lmtime": 1715587761508.2898,
+              "modified": false
+            },
+            "error_reporting.php": {
+              "type": "-",
+              "size": 272,
+              "lmtime": 1715587761552.6216,
+              "modified": false
+            },
+            "login_page_config.php": {
+              "type": "-",
+              "size": 1253,
+              "lmtime": 1715587761599.1055,
+              "modified": false
+            },
+            "ls_force_cache.php": {
+              "type": "-",
+              "size": 137,
+              "lmtime": 1715587761645.2263,
+              "modified": false
+            },
+            "majkel-testy.php": {
+              "type": "-",
+              "size": 3120,
+              "lmtime": 1715587833016.654,
+              "modified": false
+            },
+            "majkelimages-1.7.0": {
+              "init.php": {
+                "type": "-",
+                "size": 489,
+                "lmtime": 1715587762115.1252,
+                "modified": false
+              },
+              "lib": {
+                "MiBase.php": {
+                  "type": "-",
+                  "size": 3115,
+                  "lmtime": 1715587762158.3655,
+                  "modified": false
+                },
+                "MiLossy.php": {
+                  "type": "-",
+                  "size": 10369,
+                  "lmtime": 1715587762206.3354,
+                  "modified": false
+                },
+                "MiSVG.php": {
+                  "type": "-",
+                  "size": 2920,
+                  "lmtime": 1715587762247.8474,
+                  "modified": false
+                },
+                "loader.svg": {
+                  "type": "-",
+                  "size": 301,
+                  "lmtime": 1715587762289.5625,
+                  "modified": false
+                }
+              }
+            },
+            "nav_menus_config.php": {
+              "type": "-",
+              "size": 3805,
+              "lmtime": 1715587761736.1624,
+              "modified": false
+            },
+            "smtp_config.php": {
+              "type": "-",
+              "size": 462,
+              "lmtime": 1715587761780.442,
+              "modified": false
+            },
+            "spamguard-1.0.1": {
+              ".DS_Store": {
+                "type": "-",
+                "size": 6148,
+                "lmtime": 1715587762334.582,
+                "modified": false
+              },
+              "README.md": {
+                "type": "-",
+                "size": 1140,
+                "lmtime": 1715587762377.757,
+                "modified": false
+              },
+              "assets": {
+                "css": {
+                  "rekuspamshield.css": {
+                    "type": "-",
+                    "size": 0,
+                    "lmtime": 1715587762528.5923,
+                    "modified": false
+                  },
+                  "rekuspamshield.min.css": {
+                    "type": "-",
+                    "size": 48,
+                    "lmtime": 1715587762574.7205,
+                    "modified": false
+                  },
+                  "style-admin.css": {
+                    "type": "-",
+                    "size": 188,
+                    "lmtime": 1715587762619.8357,
+                    "modified": false
+                  },
+                  "style-admin.min.css": {
+                    "type": "-",
+                    "size": 146,
+                    "lmtime": 1715587762664.1003,
+                    "modified": false
+                  }
+                },
+                "js": {
+                  "delete-confirm.js": {
+                    "type": "-",
+                    "size": 351,
+                    "lmtime": 1715587762722.1438,
+                    "modified": false
+                  },
+                  "delete-confirm.min.js": {
+                    "type": "-",
+                    "size": 301,
+                    "lmtime": 1715587762768.9397,
+                    "modified": false
+                  },
+                  "token-generator.js": {
+                    "type": "-",
+                    "size": 941,
+                    "lmtime": 1715587762821.4478,
+                    "modified": false
+                  },
+                  "token-generator.min.js": {
+                    "type": "-",
+                    "size": 519,
+                    "lmtime": 1715587762867.3877,
+                    "modified": false
+                  }
+                }
+              },
+              "init.php": {
+                "type": "-",
+                "size": 346,
+                "lmtime": 1715587762431.268,
+                "modified": false
+              },
+              "lib": {
+                "blacklist.json": {
+                  "type": "-",
+                  "size": 422,
+                  "lmtime": 1715587762912.1807,
+                  "modified": false
+                }
+              },
+              "src": {
+                "SpamGuard.log": {
+                  "type": "-",
+                  "size": 152683,
+                  "lmtime": 1715587762978.6384,
+                  "modified": false
+                },
+                "SpamGuard.php": {
+                  "type": "-",
+                  "size": 18511,
+                  "lmtime": 1715587763045.345,
+                  "modified": false
+                }
+              },
+              "todo.md": {
+                "type": "-",
+                "size": 77,
+                "lmtime": 1715587762478.041,
+                "modified": false
+              }
+            },
+            "splide-component.php": {
+              "type": "-",
+              "size": 2726,
+              "lmtime": 1715587761834.882,
+              "modified": false
+            },
+            "theme_config.php": {
+              "type": "-",
+              "size": 6126,
+              "lmtime": 1715587761878.4192,
+              "modified": false
+            },
+            "theme_utils.php": {
+              "type": "-",
+              "size": 28105,
+              "lmtime": 1715587761931.6084,
+              "modified": false
+            },
+            "yoast_config.php": {
+              "type": "-",
+              "size": 1533,
+              "lmtime": 1715587761974.4077,
+              "modified": false
+            }
+          },
+          "functions.php": {
+            "type": "-",
+            "size": 1018,
+            "lmtime": 1715587754576.4106,
+            "modified": false
+          },
+          "header.php": {
+            "type": "-",
+            "size": 2036,
+            "lmtime": 1715587754620.863,
+            "modified": false
+          },
+          "index.php": {
+            "type": "-",
+            "size": 558,
+            "lmtime": 1715587754665.1177,
+            "modified": false
+          },
+          "logs": {},
+          "page.php": {
+            "type": "-",
+            "size": 158,
+            "lmtime": 1715587754707.234,
+            "modified": false
+          },
+          "screenshot.png": {
+            "type": "-",
+            "size": 545629,
+            "lmtime": 1715587754796.9028,
+            "modified": false
+          },
+          "single.php": {
+            "type": "-",
+            "size": 869,
+            "lmtime": 1715587754840.0015,
+            "modified": false
+          },
+          "style.css": {
+            "type": "-",
+            "size": 216,
+            "lmtime": 1715587754885.398,
+            "modified": false
+          },
+          "template-parts": {
+            ".DS_Store": {
+              "type": "-",
+              "size": 8196,
+              "lmtime": 1715587777341.126,
+              "modified": false
+            },
+            "_old": {
+              "cursor.php": {
+                "type": "-",
+                "size": 677,
+                "lmtime": 1715587763176.9612,
+                "modified": false
+              },
+              "mobile-bar.php": {
+                "type": "-",
+                "size": 938,
+                "lmtime": 1715587763220.8845,
+                "modified": false
+              }
+            },
+            "cf7-forms": {
+              ".DS_Store": {
+                "type": "-",
+                "size": 6148,
+                "lmtime": 1715587763265.2983,
+                "modified": false
+              }
+            },
+            "components": {
+              ".DS_Store": {
+                "type": "-",
+                "size": 6148,
+                "lmtime": 1715587763309.3323,
+                "modified": false
+              },
+              "heading.php": {
+                "type": "-",
+                "size": 2507,
+                "lmtime": 1715587763351.72,
+                "modified": false
+              },
+              "navigation.php": {
+                "type": "-",
+                "size": 5483,
+                "lmtime": 1715587997388.2588,
+                "modified": false
+              },
+              "splide-arrows.php": {
+                "type": "-",
+                "size": 1514,
+                "lmtime": 1715587763441.1968,
+                "modified": false
+              },
+              "test.php": {
+                "type": "-",
+                "size": 22,
+                "lmtime": 1715587763487.6514,
+                "modified": false
+              },
+              "video.php": {
+                "type": "-",
+                "size": 2371,
+                "lmtime": 1715587763531.0015,
+                "modified": false
+              }
+            },
+            "flexible.php": {
+              "type": "-",
+              "size": 743,
+              "lmtime": 1715587763133.9854,
+              "modified": false
+            },
+            "main": {
+              ".DS_Store": {
+                "type": "-",
+                "size": 6148,
+                "lmtime": 1715587783867.56,
+                "modified": false
+              },
+              "about.php": {
+                "type": "-",
+                "size": 2171,
+                "lmtime": 1715587763575.67,
+                "modified": false
+              },
+              "cta.php": {
+                "type": "-",
+                "size": 1470,
+                "lmtime": 1715587763617.435,
+                "modified": false
+              },
+              "hero.php": {
+                "type": "-",
+                "size": 1888,
+                "lmtime": 1715587763667.5256,
+                "modified": false
+              },
+              "marquee.php": {
+                "type": "-",
+                "size": 1130,
+                "lmtime": 1715587763709.9756,
+                "modified": false
+              },
+              "newsletter.php": {
+                "type": "-",
+                "size": 364,
+                "lmtime": 1715587763757.489,
+                "modified": false
+              },
+              "offer.php": {
+                "type": "-",
+                "size": 733,
+                "lmtime": 1715587763803.1912,
+                "modified": false
+              },
+              "reviews.php": {
+                "type": "-",
+                "size": 2709,
+                "lmtime": 1715587763849.0173,
+                "modified": false
+              },
+              "test.php": {
+                "type": "-",
+                "size": 8225,
+                "lmtime": 1715587763891.4941,
+                "modified": false
+              }
+            },
+            "other": {
+              "breadcrumb.php": {
+                "type": "-",
+                "size": 179,
+                "lmtime": 1715587763933.6172,
+                "modified": false
+              },
+              "cookie_consent_dialog.php": {
+                "type": "-",
+                "size": 2427,
+                "lmtime": 1715587763983.469,
+                "modified": false
+              },
+              "svg.php": {
+                "type": "-",
+                "size": 12783,
+                "lmtime": 1715587764024.975,
+                "modified": false
+              },
+              "templates.php": {
+                "type": "-",
+                "size": 388,
+                "lmtime": 1715587764073.004,
+                "modified": false
+              }
+            },
+            "page": {
+              ".DS_Store": {
+                "type": "-",
+                "size": 6148,
+                "lmtime": 1715587764119.823,
+                "modified": false
+              },
+              "test.php": {
+                "type": "-",
+                "size": 20,
+                "lmtime": 1715587764161.4785,
+                "modified": false
+              }
+            },
+            "post": {
+              ".DS_Store": {
+                "type": "-",
+                "size": 6148,
+                "lmtime": 1715587764205.2605,
+                "modified": false
+              }
+            }
+          },
+          "templates": {
+            ".DS_Store": {
+              "type": "-",
+              "size": 6148,
+              "lmtime": 1715587764257.4216,
+              "modified": false
+            },
+            "template-blog.php": {
+              "type": "-",
+              "size": 1365,
+              "lmtime": 1715587764298.3608,
+              "modified": false
+            },
+            "template-home.php": {
+              "type": "-",
+              "size": 206,
+              "lmtime": 1715587764344.0105,
+              "modified": false
+            },
+            "template-privacy.php": {
+              "type": "-",
+              "size": 257,
+              "lmtime": 1715587764389.5237,
+              "modified": false
+            },
+            "template-test.php": {
+              "type": "-",
+              "size": 81,
+              "lmtime": 1715587764434.6526,
+              "modified": false
+            }
+          }
+        },
+        "index.php": {
+          "type": "-",
+          "size": 28,
+          "lmtime": 0,
+          "modified": false
+        },
+        "twentytwentyfour": {},
+        "twentytwentythree": {},
+        "twentytwentytwo": {}
+      },
+      "plugins": {
+        ".DS_Store": {
+          "type": "-",
+          "size": 8196,
+          "lmtime": 1715596942870.5273,
+          "modified": false
+        },
+        "advanced-custom-fields-pro": {},
+        "anty-spam-rekurencja": {
+          "LICENSE.txt": {
+            "type": "-",
+            "size": 18091,
+            "lmtime": 1715595047597.578,
+            "modified": false
+          },
+          "README.txt": {
+            "type": "-",
+            "size": 4357,
+            "lmtime": 1715595047662.9827,
+            "modified": false
+          },
+          "admin": {
+            "class-anty-spam-rekurencja-admin.php": {
+              "type": "-",
+              "size": 5582,
+              "lmtime": 1715598684009.0886,
+              "modified": false
+            },
+            "css": {
+              "anty-spam-rekurencja-admin.css": {
+                "type": "-",
+                "size": 99,
+                "lmtime": 1715595047952.6768,
+                "modified": false
+              }
+            },
+            "index.php": {
+              "type": "-",
+              "size": 26,
+              "lmtime": 1715595047907.8918,
+              "modified": false
+            },
+            "js": {
+              "anty-spam-rekurencja-admin.js": {
+                "type": "-",
+                "size": 837,
+                "lmtime": 1715595048010.4548,
+                "modified": false
+              }
+            },
+            "partials": {
+              "anty-spam-rekurencja-admin-display.php": {
+                "type": "-",
+                "size": 380,
+                "lmtime": 1715595048058.7786,
+                "modified": false
+              }
+            }
+          },
+          "anty-spam-rekurencja.php": {
+            "type": "-",
+            "size": 3596,
+            "lmtime": 1715598356035.6677,
+            "modified": false
+          },
+          "includes": {
+            "class-anty-spam-rekurencja-activator.php": {
+              "type": "-",
+              "size": 1568,
+              "lmtime": 1715597277394.7556,
+              "modified": false
+            },
+            "class-anty-spam-rekurencja-deactivator.php": {
+              "type": "-",
+              "size": 683,
+              "lmtime": 1715595048162.0488,
+              "modified": false
+            },
+            "class-anty-spam-rekurencja-i18n.php": {
+              "type": "-",
+              "size": 972,
+              "lmtime": 1715595048212.583,
+              "modified": false
+            },
+            "class-anty-spam-rekurencja-loader.php": {
+              "type": "-",
+              "size": 4926,
+              "lmtime": 1715595048269.5852,
+              "modified": false
+            },
+            "class-anty-spam-rekurencja.php": {
+              "type": "-",
+              "size": 6343,
+              "lmtime": 1715595742411.1921,
+              "modified": false
+            },
+            "class-spam-detector-interface.php": {
+              "type": "-",
+              "size": 85,
+              "lmtime": 1715592167262.95,
+              "modified": false
+            },
+            "class-spam-detector.php": {
+              "type": "-",
+              "size": 277,
+              "lmtime": 1715592170530.492,
+              "modified": false
+            },
+            "detectors": {
+              "class-honeypot-detector.php": {
+                "type": "-",
+                "size": 226,
+                "lmtime": 1715595736539.6921,
+                "modified": false
+              },
+              "class-time-check.php": {
+                "type": "-",
+                "size": 225,
+                "lmtime": 1715594045825.8762,
+                "modified": false
+              },
+              "class-time-detector.php": {
+                "type": "-",
+                "size": 901,
+                "lmtime": 1715595767808.03,
+                "modified": false
+              }
+            },
+            "index.php": {
+              "type": "-",
+              "size": 26,
+              "lmtime": 1715595048375.1956,
+              "modified": false
+            }
+          },
+          "index.php": {
+            "type": "-",
+            "size": 26,
+            "lmtime": 1715595047757.168,
+            "modified": false
+          },
+          "languages": {
+            "anty-spam-rekurencja.pot": {
+              "type": "-",
+              "size": 0,
+              "lmtime": 1715595048425.4458,
+              "modified": false
+            }
+          },
+          "public": {
+            "class-anty-spam-rekurencja-public.php": {
+              "type": "-",
+              "size": 2689,
+              "lmtime": 1715595048488.0945,
+              "modified": false
+            },
+            "css": {
+              "anty-spam-rekurencja-public.css": {
+                "type": "-",
+                "size": 98,
+                "lmtime": 1715595048613.4048,
+                "modified": false
+              }
+            },
+            "index.php": {
+              "type": "-",
+              "size": 26,
+              "lmtime": 1715595048557.8123,
+              "modified": false
+            },
+            "js": {
+              "anty-spam-rekurencja-public.js": {
+                "type": "-",
+                "size": 838,
+                "lmtime": 1715595048663.028,
+                "modified": false
+              }
+            },
+            "partials": {
+              "anty-spam-rekurencja-public-display.php": {
+                "type": "-",
+                "size": 385,
+                "lmtime": 1715595048710.5798,
+                "modified": false
+              }
+            }
+          },
+          "uninstall.php": {
+            "type": "-",
+            "size": 1066,
+            "lmtime": 1715595047809.7327,
+            "modified": false
+          }
+        },
+        "cleantalk-spam-protect": {},
+        "contact-form-7": {},
+        "index.php": {
+          "type": "-",
+          "size": 28,
+          "lmtime": 0,
+          "modified": false
+        },
+        "wp-mail-smtp": {
+          "assets": {},
+          "readme.txt": {
+            "type": "-",
+            "size": 29867,
+            "lmtime": 0,
+            "modified": false
+          },
+          "src": {},
+          "uninstall.php": {
+            "type": "-",
+            "size": 9395,
+            "lmtime": 0,
+            "modified": false
+          },
+          "vendor": {},
+          "vendor_prefixed": {},
+          "wp-mail-smtp.php": {
+            "type": "-",
+            "size": 1473,
+            "lmtime": 0,
+            "modified": false
+          },
+          "wp_mail_smtp.php": {
+            "type": "-",
+            "size": 10696,
+            "lmtime": 0,
+            "modified": false
+          }
+        }
+      }
+    },
+    "wp-cron.php": {
+      "type": "-",
+      "size": 5638,
+      "lmtime": 0,
+      "modified": false
+    },
+    "wp-includes": {},
+    "wp-links-opml.php": {
+      "type": "-",
+      "size": 2502,
+      "lmtime": 0,
+      "modified": false
+    },
+    "wp-load.php": {
+      "type": "-",
+      "size": 3927,
+      "lmtime": 0,
+      "modified": false
+    },
+    "wp-login.php": {
+      "type": "-",
+      "size": 50917,
+      "lmtime": 0,
+      "modified": false
+    },
+    "wp-mail.php": {
+      "type": "-",
+      "size": 8525,
+      "lmtime": 0,
+      "modified": false
+    },
+    "wp-settings.php": {
+      "type": "-",
+      "size": 28427,
+      "lmtime": 0,
+      "modified": false
+    },
+    "wp-signup.php": {
+      "type": "-",
+      "size": 34385,
+      "lmtime": 0,
+      "modified": false
+    },
+    "wp-trackback.php": {
+      "type": "-",
+      "size": 4885,
+      "lmtime": 0,
+      "modified": false
+    },
+    "xmlrpc.php": {
+      "type": "-",
+      "size": 3246,
+      "lmtime": 0,
+      "modified": false
+    }
+  },
+  "$version": 1
+}

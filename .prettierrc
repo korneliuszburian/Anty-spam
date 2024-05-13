@@ -1,0 +1,32 @@
+{
+  "tabWidth": 2,
+  "useTabs": true,
+  "printWidth": 80,
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "bracketSameLine": false,
+  "bracketSpacing": true,
+  "semi": true,
+  "arrowParens": "always",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "...customOptions": {
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "overrides": [
+    {
+      "files": "*.{css,sass,scss,less}",
+      "options": {
+        "singleQuote": false,
+        "...customStyleOptions": {
+          "parenSpacing": false
+        }
+      }
+    }
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}

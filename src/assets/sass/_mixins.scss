@@ -1,0 +1,107 @@
+/**
+ * _mixins.css
+ */
+
+@mixin clip-path($value) {
+	-webkit-clip-path: #{$value};
+	clip-path: #{$value};
+}
+
+/* input { @include input-placeholder { color: $grey; } } */
+@mixin input-placeholder {
+	&:-moz-placeholder {
+		@content;
+	}
+
+	&::-moz-placeholder {
+		@content;
+	}
+
+	&:-ms-input-placeholder {
+		@content;
+	}
+
+	&::-webkit-input-placeholder {
+		@content;
+	}
+}
+
+/* WCAG */
+@mixin d-flex() {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+@mixin d-inline-flex() {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+}
+
+@mixin justify-content($dir) {
+	@if $dir== "flex-start" {
+		-webkit-box-pack: start;
+		-ms-flex-pack: start;
+	} @else if $dir== "flex-end" {
+		-webkit-box-pack: end;
+		-ms-flex-pack: end;
+	} @else if $dir== "space-between" {
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+	} @else if $dir== "space-around" {
+		-ms-flex-pack: distribute;
+	} @else if $dir== "space-evenly" {
+		-ms-flex-pack: $dir;
+	} @else {
+		-webkit-box-pack: $dir;
+		-ms-flex-pack: $dir;
+	}
+
+	justify-content: $dir;
+}
+
+@mixin align-items($dir) {
+	@if $dir== "flex-start" {
+		-webkit-box-align: start;
+		-ms-flex-align: start;
+	} @else if $dir== "flex-end" {
+		-webkit-box-align: end;
+		-ms-flex-align: end;
+	} @else {
+		-webkit-box-align: $dir;
+		-ms-flex-align: $dir;
+	}
+
+	align-items: $dir;
+}
+
+@mixin align-self($dir) {
+	@if $dir== "flex-start" {
+		-ms-flex-item-align: start;
+	} @else if $dir== "flex-end" {
+		-ms-flex-item-align: end;
+	} @else if $dir== "space-between" {
+		-ms-grid-row-align: between;
+	} @else if $dir== "space-around" {
+		-ms-grid-row-align: around;
+	} @else if $dir== "space-evenly" {
+		-ms-flex-pack: $dir;
+	} @else {
+		-ms-grid-row-align: $dir;
+	}
+
+	align-self: $dir;
+}
+
+@mixin flex-direction($dir) {
+	@if $dir== "column" {
+		-webkit-box-orient: vertical;
+	} @else {
+		-webkit-box-orient: horizontal;
+	}
+
+	-webkit-box-direction: normal;
+	-ms-flex-direction: $dir;
+	flex-direction: $dir;
+}

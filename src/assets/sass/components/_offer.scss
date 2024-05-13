@@ -1,0 +1,35 @@
+#{$offer_section}{
+    --region-space: var(--space-m-xl);
+}
+
+#{$offer_item} {
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.15);
+    
+    &:nth-of-type(6n+1) .o--img, &:nth-of-type(6n+2) .o--img {
+        background-color: var(--card-green-1);
+    }
+
+    &:nth-of-type(6n+3) .o--img, &:nth-of-type(6n+4) .o--img {
+        background-color: var(--card-green-2);
+    }
+
+    &:nth-of-type(6n+5) .o--img, &:nth-of-type(6n+6) .o--img {
+        background-color: var(--card-green-3);
+    }
+    
+    .o--img{
+        flex-shrink: 0;
+        width: 90px;
+        picture {
+            max-height: 30px;
+        }
+    }
+
+    p {
+        font-size: var(--fs-sm);
+    }
+
+    h5 {
+        color: var(--color-text-secondary);
+    }
+}

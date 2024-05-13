@@ -1,0 +1,60 @@
+#{$review_section}{
+    --region-space: var(--space-xl-2xl);
+    
+    .splide__track{
+        padding-block: 5px;
+    }
+
+    &__h{
+        grid-template-columns: repeat(2, 1fr);
+
+        &--l{
+            gap: 15px;
+        }
+
+        &--r {
+            justify-self: end;
+        }
+
+        img{
+            height: 33px;
+            width: auto;
+        }
+    }
+
+    @media (max-width: 1024px){
+        &__h{
+            grid-template-columns: 1fr;
+            gap: 24px;
+
+            &--r{
+                align-items: start;
+                justify-content: start;
+                justify-self: unset;
+            }
+        }
+    }
+}
+
+#{$review_item} {
+    --flow-space: 1em;
+    background: var(--color-light);
+    padding: 40px;
+    color: var(--color-mid-dark);
+    height: 100%;
+    box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.15);
+
+    &--c{
+        gap: 8px;
+    }
+
+    p:not(.feat) {
+        color: var(--color-mid-dark);
+        line-height: 150%;
+    }
+
+    picture {
+        width: auto;
+        height: 22px;
+    }
+}

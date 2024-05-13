@@ -1,0 +1,26 @@
+/**
+ * admin.css
+ * styles only for admin
+ */
+
+@import "mixins";
+
+$noticeMessage: ".msg";
+
+#{$noticeMessage} {
+	background: #ffb4b4;
+	padding: 2em 10em;
+
+	br {
+		display: none;
+	}
+
+	a {
+		text-decoration: underline;
+		color: inherit;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+}
