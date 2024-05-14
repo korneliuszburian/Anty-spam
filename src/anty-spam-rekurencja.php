@@ -13,9 +13,9 @@
  * @package           Anty_Spam_Rekurencja
  *
  * @wordpress-plugin
- * Plugin Name:       Anty-Spam Rekurencja
+ * Plugin Name:       Anty-Spam by Rekurencja
  * Plugin URI:        https://anti-spam.rekurencja.com/
- * Description:       This is a description of the plugin.
+ * Description:       Antyspamowe narzędzie, do zatrzymania złośliwego spamu.
  * Version:           1.0.0
  * Author:            Korneliusz Burian
  * Author URI:        https://korneliuszburian.github.io//

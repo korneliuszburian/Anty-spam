@@ -1453,9 +1453,9 @@
           },
           "anty-spam-rekurencja.php": {
             "type": "-",
-            "size": 3596,
+            "size": 3601,
             "lmtime": 1715598356035.6677,
-            "modified": false
+            "modified": true
           },
           "includes": {
             "class-anty-spam-rekurencja-activator.php": {

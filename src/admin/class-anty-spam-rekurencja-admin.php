@@ -49,6 +49,15 @@ class Anty_Spam_Rekurencja_Admin
         add_submenu_page('anty-spam-options', 'Submitted Forms', 'Submitted Forms', 'manage_options', 'submitted-forms', [$this, 'display_submitted_forms_page']);
         add_submenu_page('anty-spam-options', 'Blocked IPs', 'Blocked IPs', 'manage_options', 'blocked-ips', [$this, 'display_blocked_ips_page']);
         add_submenu_page('anty-spam-options', 'Blocked Words', 'Blocked Words', 'manage_options', 'blocked-words', [$this, 'display_blocked_words_page']);
+        add_submenu_page('anty-spam-options', 'Error Log', 'Error Log', 'manage_options', 'error-log', [$this, 'display_error_log_page']);
+    }
+
+    public function display_error_log_page()
+    {
+        $log_path = plugin_dir_path(__FILE__) . 'logs/error_log.txt';
+        $log_contents = file_exists($log_path) ? file_get_contents($log_path) : 'No errors logged.';
+    
+        echo '<div class="wrap"><h1>Error Log</h1><pre>' . esc_html($log_contents) . '</pre></div>';
     }
 
     public function display_options_page()
@@ -63,28 +72,47 @@ class Anty_Spam_Rekurencja_Admin
 
     public function display_submitted_forms_page()
     {
-        echo $this->render_submitted_forms();
+        try {
+            require_once 'partials/anty-spam-rekurencja-admin-display.php';
+            echo render_submitted_forms($this->get_submitted_forms());
+        } catch (Anty_Spam_Rekurencja_Exception $e) {
+            $this->display_admin_error($e);
+        }
     }
 
     public function display_blocked_ips_page()
     {
-        echo $this->render_blocked_ips();
+        try {
+            require_once 'partials/anty-spam-rekurencja-admin-display.php';
+            echo render_blocked_ips($this->get_blocked_ips());
+        } catch (Anty_Spam_Rekurencja_Exception $e) {
+            $this->display_admin_error($e);
+        }
     }
 
     public function display_blocked_words_page()
     {
-        echo $this->render_blocked_words();
+        try {
+            require_once 'partials/anty-spam-rekurencja-admin-display.php';
+            echo render_blocked_words($this->get_blocked_words());
+        } catch (Anty_Spam_Rekurencja_Exception $e) {
+            $this->display_admin_error($e);
+        }
     }
 
     public function handle_actions()
     {
-        $this->handle_ip_actions();
-        $this->handle_word_actions();
+        try {
+            $this->handle_ip_actions();
+            $this->handle_word_actions();
+        } catch (Anty_Spam_Rekurencja_Exception $e) {
+            $this->display_admin_error($e);
+        }
     }
 
     private function handle_ip_actions()
     {
-        $action = $_GET['action'] ?? '';
+        $action = sanitize_text_field($_GET['action'] ?? '');
         $ip_address = sanitize_text_field($_GET['ip_address'] ?? '');
 
         if (!empty($ip_address)) {
@@ -104,59 +132,28 @@ class Anty_Spam_Rekurencja_Admin
                 $this->add_blocked_word($new_word);
             }
         }
+
+        if (isset($_POST['upload_file']) && check_admin_referer('upload-words-file', '_wpnonce_upload_words_file')) {
+            $this->handle_file_upload();
+        }
     }
 
-    private function render_submitted_forms()
+    private function handle_file_upload()
     {
-        $submitted_forms = $this->get_submitted_forms();
-        ob_start();
-        ?>
-        <div class="wrap">
-            <h1>Submitted Forms</h1>
-            <?php echo $submitted_forms; ?>
-        </div>
-        <?php
-        return ob_get_clean();
+        try {
+            if (isset($_FILES['words_file']) && $_FILES['words_file']['error'] == UPLOAD_ERR_OK) {
+                $file = $_FILES['words_file']['tmp_name'];
+                $words = file($file, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+                foreach ($words as $word) {
+                    $this->add_blocked_word(sanitize_text_field($word));
+                }
+            } else {
+                throw new Anty_Spam_Rekurencja_Exception("File upload error or no file uploaded.");
+            }
+        } catch (Exception $e) {
+            throw new Anty_Spam_Rekurencja_Exception("Error processing file upload: " . $e->getMessage());
+        }
     }
-
-    private function render_blocked_ips()
-    {
-        $blocked_ips = $this->get_blocked_ips();
-        ob_start();
-        ?>
-        <div class="wrap">
-            <h1>Blocked IPs</h1>
-            <p>Here you can view and manage the list of IP addresses that have been blocked from submitting forms.</p>
-            <?php echo $blocked_ips; ?>
-        </div>
-        <?php
-        return ob_get_clean();
-    }
-
-    private function render_blocked_words()
-    {
-        $blocked_words = $this->get_blocked_words(); 
-        ob_start();
-        ?>
-        <div class="wrap">
-            <h1>Blocked Words</h1>
-            <p>Manage the list of words that trigger spam detection. Add words manually or by uploading a .txt file.</p>
-            
-            <form method="post" enctype="multipart/form-data">
-                <input type="text" name="new_word" placeholder="Enter Word">
-                <?php wp_nonce_field('update-blocked-words', '_wpnonce_update_blocked_words'); ?>
-                <input type="submit" name="submit" value="Add Word">
-                
-                <input type="file" name="words_file" accept=".txt">
-                <input type="submit" name="upload_file" value="Upload File">
-            </form>
-            
-            <?php echo $blocked_words; ?>
-        </div>
-        <?php
-        return ob_get_clean();
-    }
-    
 
     private function get_submitted_forms()
     {
@@ -235,5 +232,16 @@ class Anty_Spam_Rekurencja_Admin
     {
         global $wpdb;
         return $wpdb->get_col("SELECT ip_address FROM {$wpdb->prefix}cf7_blocked_ips");
+    }
+
+    private function display_admin_error($e)
+    {
+        add_action('admin_notices', function() use ($e) {
+            ?>
+            <div class="notice notice-error">
+                <p><?php echo esc_html($e->getMessage()); ?></p>
+            </div>
+            <?php
+        });
     }
 }

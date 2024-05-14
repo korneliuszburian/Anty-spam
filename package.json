@@ -1,11 +1,8 @@
 {
-  "name": "wilmed-rekurencja-com",
+  "name": "anty-spam-rekurencja-com",
   "version": "1.0.0",
   "description": "<a href=\"https://rekurencja.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://rekurencja.com</a>",
   "main": "index.js",
-  "scripts": {
-      "minify": "node minify.js"
-  },
   "author": "",
   "license": "ISC",
   "dependencies": {

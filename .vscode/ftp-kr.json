@@ -3,7 +3,7 @@
 	"protocol": "ftp",
 	"username": "doorknob0485",
 	"password": "G&7d%f^&2&g^fp!G#q35",
-	"remotePath": "wp-content/plugins/anty-spam-rekurencja",
+	"remotePath": "wp-content/themes/blank-theme",
 	"port": 21,
 	"localBasePath": "src",
 	"fileNameEncoding": "utf8",
