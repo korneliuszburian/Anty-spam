@@ -852,9 +852,9 @@
           },
           "footer.php": {
             "type": "-",
-            "size": 116,
+            "size": 125,
             "lmtime": 1715587890701.9902,
-            "modified": false
+            "modified": true
           },
           "functions": {
             "acf": {
@@ -997,8 +997,8 @@
             },
             "smtp_config.php": {
               "type": "-",
-              "size": 462,
-              "lmtime": 1715587761780.442,
+              "size": 477,
+              "lmtime": 1715682756127,
               "modified": false
             },
             "spamguard-1.0.1": {
@@ -1167,8 +1167,8 @@
           },
           "style.css": {
             "type": "-",
-            "size": 216,
-            "lmtime": 1715587754885.398,
+            "size": 228,
+            "lmtime": 1715682785188,
             "modified": false
           },
           "template-parts": {
@@ -1453,21 +1453,27 @@
           },
           "anty-spam-rekurencja.php": {
             "type": "-",
-            "size": 3601,
+            "size": 3626,
             "lmtime": 1715598356035.6677,
             "modified": true
           },
           "includes": {
             "class-anty-spam-rekurencja-activator.php": {
               "type": "-",
-              "size": 1568,
+              "size": 1961,
               "lmtime": 1715597277394.7556,
-              "modified": false
+              "modified": true
             },
             "class-anty-spam-rekurencja-deactivator.php": {
               "type": "-",
               "size": 683,
               "lmtime": 1715595048162.0488,
+              "modified": false
+            },
+            "class-anty-spam-rekurencja-exception.php": {
+              "type": "-",
+              "size": 646,
+              "lmtime": 0,
               "modified": false
             },
             "class-anty-spam-rekurencja-i18n.php": {
@@ -1490,15 +1496,15 @@
             },
             "class-spam-detector-interface.php": {
               "type": "-",
-              "size": 85,
+              "size": 216,
               "lmtime": 1715592167262.95,
-              "modified": false
+              "modified": true
             },
             "class-spam-detector.php": {
               "type": "-",
-              "size": 277,
+              "size": 268,
               "lmtime": 1715592170530.492,
-              "modified": false
+              "modified": true
             },
             "detectors": {
               "class-honeypot-detector.php": {

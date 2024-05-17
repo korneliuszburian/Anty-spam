@@ -80,11 +80,35 @@ class Anty_Spam_Rekurencja_Admin
         }
     }
 
+    private function render_blocked_words()
+    {
+        $blocked_words = $this->get_blocked_words();
+        ob_start();
+        ?>
+        <div class="wrap">
+            <h1>Blocked Words wtf</h1>
+            <p>Manage the list of words that trigger spam detection. Add words manually or by uploading a .txt file.</p>
+            
+            <form method="post" enctype="multipart/form-data">
+                <input type="text" name="new_word" placeholder="Enter Word">
+                <?php wp_nonce_field('update-blocked-words', '_wpnonce_update_blocked_words'); ?>
+                <input type="submit" name="submit" value="Add Word">
+                
+                <input type="file" name="words_file" accept=".txt">
+                <input type="submit" name="upload_file" value="Upload File">
+            </form>
+            
+            <?php echo $blocked_words; ?>
+        </div>
+        <?php
+        return ob_get_clean();
+    }
+
     public function display_blocked_ips_page()
     {
         try {
             require_once 'partials/anty-spam-rekurencja-admin-display.php';
-            echo render_blocked_ips($this->get_blocked_ips());
+            render_blocked_words($this->get_blocked_ips());
         } catch (Anty_Spam_Rekurencja_Exception $e) {
             $this->display_admin_error($e);
         }
@@ -93,8 +117,7 @@ class Anty_Spam_Rekurencja_Admin
     public function display_blocked_words_page()
     {
         try {
-            require_once 'partials/anty-spam-rekurencja-admin-display.php';
-            echo render_blocked_words($this->get_blocked_words());
+            echo $this->render_blocked_words();
         } catch (Anty_Spam_Rekurencja_Exception $e) {
             $this->display_admin_error($e);
         }
