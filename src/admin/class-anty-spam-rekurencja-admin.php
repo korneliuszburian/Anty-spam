@@ -86,7 +86,7 @@ class Anty_Spam_Rekurencja_Admin
         ob_start();
         ?>
         <div class="wrap">
-            <h1>Blocked Words wtf</h1>
+            <h1>Blocked Words</h1>
             <p>Manage the list of words that trigger spam detection. Add words manually or by uploading a .txt file.</p>
             
             <form method="post" enctype="multipart/form-data">
@@ -107,11 +107,25 @@ class Anty_Spam_Rekurencja_Admin
     public function display_blocked_ips_page()
     {
         try {
-            require_once 'partials/anty-spam-rekurencja-admin-display.php';
-            render_blocked_words($this->get_blocked_ips());
+            // require_once 'partials/anty-spam-rekurencja-admin-display.php';
+            echo $this->render_blocked_ips();
         } catch (Anty_Spam_Rekurencja_Exception $e) {
             $this->display_admin_error($e);
         }
+    }
+
+    private function render_blocked_ips()
+    {
+        $blocked_ips = $this->get_blocked_ips();
+        ob_start();
+        ?>
+        <div class="wrap">
+            <h1>Blocked IPs</h1>
+            <p>Here you can view and manage the list of IP addresses that have been blocked from submitting forms.</p>
+            <?php echo $blocked_ips; ?>
+        </div>
+        <?php
+        return ob_get_clean();
     }
 
     public function display_blocked_words_page()
