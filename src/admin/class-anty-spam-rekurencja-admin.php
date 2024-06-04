@@ -3,7 +3,10 @@ require_once 'class-spam-interface.php';
 require_once 'class-anty-spam-rekurencja-ip-manager.php';
 require_once 'class-anty-spam-rekurencja-word-manager.php';
 require_once 'class-anty-spam-rekurencja-forms-manager.php';
-require_once 'class-log-manager.php'; // Include LogManager for logging functionalities
+require_once 'class-anty-spam-rekurencja-honeypot-manager.php';
+require_once 'class-anty-spam-rekurencja-dns-manager.php';
+require_once 'class-anty-spam-rekurencja-validation-manager.php';
+require_once 'class-log-manager.php';
 
 class Anty_Spam_Rekurencja_Admin {
     private $plugin_name;
@@ -16,7 +19,10 @@ class Anty_Spam_Rekurencja_Admin {
         $this->managers = [
             'IP Manager' => new Anty_Spam_Rekurencja_IP_Manager(),
             'Word Manager' => new Anty_Spam_Rekurencja_Word_Manager(),
-            'Forms Manager' => new Anty_Spam_Rekurencja_Forms_Manager()
+            'Forms Manager' => new Anty_Spam_Rekurencja_Forms_Manager(),
+            'Honeypot Manager' => new Anty_Spam_Rekurencja_Honeypot_Manager(),
+            'DNS Block Manager' => new DNS_Block_Manager(),
+            'Validation Manager' => new Validation_Manager(),
         ];
         $this->register_hooks();
     }
@@ -46,7 +52,7 @@ class Anty_Spam_Rekurencja_Admin {
         add_submenu_page('anty-spam-options', 'Error Log', 'Error Log', 'manage_options', 'error-log', ['LogManager', 'display_error_log_page']);
         add_submenu_page('anty-spam-options', 'Activity Log', 'Activity Log', 'manage_options', 'activity-log', ['LogManager', 'displayActivityLogPage']);
     }
-    
+
     public function display_options_page() {
         echo '<div class="wrap"><h1>Anty Spam Options</h1><p>Welcome to the Anty Spam Configuration Page.</p></div>';
     }

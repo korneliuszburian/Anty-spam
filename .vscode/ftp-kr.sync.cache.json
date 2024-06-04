@@ -1414,17 +1414,77 @@
             "modified": false
           },
           "admin": {
+            "class-activity-log-manager.php": {
+              "type": "-",
+              "size": 1360,
+              "lmtime": 0,
+              "modified": false
+            },
             "class-anty-spam-rekurencja-admin.php": {
               "type": "-",
-              "size": 5582,
-              "lmtime": 1715598684009.0886,
+              "size": 2625,
+              "lmtime": 1717484569912.4106,
+              "modified": false
+            },
+            "class-anty-spam-rekurencja-forms-manager.php": {
+              "type": "-",
+              "size": 9279,
+              "lmtime": 1717484341498.1016,
+              "modified": false
+            },
+            "class-anty-spam-rekurencja-honeypot-manager.php": {
+              "type": "-",
+              "size": 6603,
+              "lmtime": 1717486701119.7903,
+              "modified": false
+            },
+            "class-anty-spam-rekurencja-interface.php": {
+              "type": "-",
+              "size": 0,
+              "lmtime": 1716887897815.7798,
+              "modified": false
+            },
+            "class-anty-spam-rekurencja-ip-manager.php": {
+              "type": "-",
+              "size": 4997,
+              "lmtime": 1716971431522.2983,
+              "modified": false
+            },
+            "class-anty-spam-rekurencja-word-manager.php": {
+              "type": "-",
+              "size": 12947,
+              "lmtime": 1717494760953.195,
+              "modified": false
+            },
+            "class-base-manager.php": {
+              "type": "-",
+              "size": 797,
+              "lmtime": 1716887897816.339,
+              "modified": false
+            },
+            "class-log-manager.php": {
+              "type": "-",
+              "size": 2325,
+              "lmtime": 1716887897816.4539,
+              "modified": false
+            },
+            "class-spam-interface.php": {
+              "type": "-",
+              "size": 534,
+              "lmtime": 1716887897816.5671,
               "modified": false
             },
             "css": {
               "anty-spam-rekurencja-admin.css": {
                 "type": "-",
-                "size": 99,
-                "lmtime": 1715595047952.6768,
+                "size": 193,
+                "lmtime": 1717486575991.1484,
+                "modified": false
+              },
+              "honeypot-manager.css": {
+                "type": "-",
+                "size": 92,
+                "lmtime": 1717486352298.8281,
                 "modified": false
               }
             },
@@ -1440,13 +1500,45 @@
                 "size": 837,
                 "lmtime": 1715595048010.4548,
                 "modified": false
+              },
+              "word_manager-script.js": {
+                "type": "-",
+                "size": 481,
+                "lmtime": 1716894664241.317,
+                "modified": false
+              },
+              "word_manager.js": {
+                "type": "-",
+                "size": 652,
+                "lmtime": 1716894880930.0588,
+                "modified": false
+              }
+            },
+            "logs": {
+              "activity_log.txt": {
+                "type": "-",
+                "size": 0,
+                "lmtime": 1716887897816.6384,
+                "modified": false
+              },
+              "error_log.txt": {
+                "type": "-",
+                "size": 2002,
+                "lmtime": 0,
+                "modified": false
               }
             },
             "partials": {
               "anty-spam-rekurencja-admin-display.php": {
                 "type": "-",
                 "size": 380,
-                "lmtime": 1715595048058.7786,
+                "lmtime": 1715951588891.1067,
+                "modified": false
+              },
+              "class-base-manager.php": {
+                "type": "-",
+                "size": 0,
+                "lmtime": 0,
                 "modified": false
               }
             }
@@ -1454,15 +1546,15 @@
           "anty-spam-rekurencja.php": {
             "type": "-",
             "size": 3626,
-            "lmtime": 1715598356035.6677,
-            "modified": true
+            "lmtime": 1715680556737.2087,
+            "modified": false
           },
           "includes": {
             "class-anty-spam-rekurencja-activator.php": {
               "type": "-",
-              "size": 1961,
-              "lmtime": 1715597277394.7556,
-              "modified": true
+              "size": 2107,
+              "lmtime": 1717494924376.0068,
+              "modified": false
             },
             "class-anty-spam-rekurencja-deactivator.php": {
               "type": "-",
@@ -1473,7 +1565,7 @@
             "class-anty-spam-rekurencja-exception.php": {
               "type": "-",
               "size": 646,
-              "lmtime": 0,
+              "lmtime": 1715680572315.6367,
               "modified": false
             },
             "class-anty-spam-rekurencja-i18n.php": {
@@ -1497,20 +1589,26 @@
             "class-spam-detector-interface.php": {
               "type": "-",
               "size": 216,
-              "lmtime": 1715592167262.95,
-              "modified": true
+              "lmtime": 1715606864508.398,
+              "modified": false
             },
             "class-spam-detector.php": {
               "type": "-",
               "size": 268,
-              "lmtime": 1715592170530.492,
-              "modified": true
+              "lmtime": 1715603920355.7397,
+              "modified": false
             },
             "detectors": {
               "class-honeypot-detector.php": {
                 "type": "-",
-                "size": 226,
-                "lmtime": 1715595736539.6921,
+                "size": 217,
+                "lmtime": 1715603919538.8787,
+                "modified": false
+              },
+              "class-ip-detector.php": {
+                "type": "-",
+                "size": 517,
+                "lmtime": 1715606365025.5981,
                 "modified": false
               },
               "class-time-check.php": {
@@ -1521,8 +1619,14 @@
               },
               "class-time-detector.php": {
                 "type": "-",
-                "size": 901,
-                "lmtime": 1715595767808.03,
+                "size": 892,
+                "lmtime": 1715603909762.4883,
+                "modified": false
+              },
+              "class-word-blacklist.php": {
+                "type": "-",
+                "size": 578,
+                "lmtime": 1715605659432.7764,
                 "modified": false
               }
             },
@@ -1574,6 +1678,12 @@
                 "size": 838,
                 "lmtime": 1715595048663.028,
                 "modified": false
+              },
+              "word_manager-script.js": {
+                "type": "-",
+                "size": 481,
+                "lmtime": 1716894598508.415,
+                "modified": false
               }
             },
             "partials": {
@@ -1589,6 +1699,12 @@
             "type": "-",
             "size": 1066,
             "lmtime": 1715595047809.7327,
+            "modified": false
+          },
+          ".DS_Store": {
+            "type": "-",
+            "size": 8196,
+            "lmtime": 1715610173362.2964,
             "modified": false
           }
         },

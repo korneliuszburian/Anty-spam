@@ -2,3 +2,8 @@
  * All of the CSS for your admin-specific functionality should be
  * included in this file.
  */
+
+.wpcf7-form-control-pot {
+    display: none !important;
+    visibility: hidden !important;
+}

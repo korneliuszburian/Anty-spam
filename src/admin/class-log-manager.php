@@ -15,6 +15,11 @@ class LogManager {
     }
 
     public static function displayActivityLogPage() {
+        if (isset($_GET['action']) && $_GET['action'] === 'clean-up') {
+            self::cleanUpActivityLog();
+            wp_redirect(admin_url('admin.php?page=activity-log'));
+            exit;
+        }
         $log_path = plugin_dir_path(__FILE__) . self::ACTIVITY_LOG_PATH;
         $log_contents = file_exists($log_path) ? file_get_contents($log_path) : 'No activity logged.';
         $clean_up_url = admin_url('admin.php?page=activity-log&action=clean-up');

@@ -1,5 +1,6 @@
 <?php
 require_once 'class-base-manager.php';
+require_once 'class-log-manager.php'; // Include LogManager
 
 class Anty_Spam_Rekurencja_IP_Manager extends BaseManager {
     public function register_hooks() {
@@ -15,8 +16,10 @@ class Anty_Spam_Rekurencja_IP_Manager extends BaseManager {
 
     public function display_page() {
         try {
+            LogManager::logActivity('Display Page', 'Displaying blocked IPs page');
             echo $this->render_blocked_ips();
         } catch (Anty_Spam_Rekurencja_Exception $e) {
+            LogManager::logError($e->getMessage());
             $this->display_admin_error($e);
         }
     }
@@ -39,7 +42,11 @@ class Anty_Spam_Rekurencja_IP_Manager extends BaseManager {
     }
 
     public function get_blocked_ips() {
-        return $this->wpdb->get_results("SELECT ip_address, block_time FROM {$this->wpdb->prefix}cf7_blocked_ips ORDER BY block_time DESC");
+        try {
+            return $this->wpdb->get_results("SELECT ip_address, block_time FROM {$this->wpdb->prefix}cf7_blocked_ips ORDER BY block_time DESC");
+        } catch (Exception $e) {
+            throw new Anty_Spam_Rekurencja_Exception("Error retrieving blocked IPs: " . $e->getMessage());
+        }
     }
 
     public function block_ip($ip_address) {
@@ -50,10 +57,10 @@ class Anty_Spam_Rekurencja_IP_Manager extends BaseManager {
                     ['ip_address' => $ip_address, 'block_time' => current_time('mysql')],
                     ['%s', '%s']
                 );
-                $this->log_activity('Block IP', "Blocked IP Address: $ip_address");
+                LogManager::logActivity('Block IP', "Blocked IP Address: $ip_address");
             }
-        } catch (Anty_Spam_Rekurencja_Exception $e) {
-            $this->display_admin_error($e);
+        } catch (Exception $e) {
+            throw new Anty_Spam_Rekurencja_Exception("Error blocking IP: " . $e->getMessage());
         }
     }
 
@@ -64,36 +71,52 @@ class Anty_Spam_Rekurencja_IP_Manager extends BaseManager {
                 ['ip_address' => $ip_address],
                 ['%s']
             );
-            $this->log_activity('Unblock IP', "Unblocked IP Address: $ip_address");
-        } catch (Anty_Spam_Rekurencja_Exception $e) {
-            $this->display_admin_error($e);
+            LogManager::logActivity('Unblock IP', "Unblocked IP Address: $ip_address");
+        } catch (Exception $e) {
+            throw new Anty_Spam_Rekurencja_Exception("Error unblocking IP: " . $e->getMessage());
         }
     }
 
     public function is_ip_blocked($ip_address) {
-        $result = $this->wpdb->get_var($this->wpdb->prepare(
-            "SELECT COUNT(*) FROM {$this->wpdb->prefix}cf7_blocked_ips WHERE ip_address = %s",
-            $ip_address
-        ));
-        return (int) $result > 0;
+        try {
+            $result = $this->wpdb->get_var($this->wpdb->prepare(
+                "SELECT COUNT(*) FROM {$this->wpdb->prefix}cf7_blocked_ips WHERE ip_address = %s",
+                $ip_address
+            ));
+            return (int) $result > 0;
+        } catch (Exception $e) {
+            throw new Anty_Spam_Rekurencja_Exception("Error checking if IP is blocked: " . $e->getMessage());
+        }
     }
 
     public function handle_ip_actions() {
         if (isset($_GET['action']) && isset($_GET['ip_address'])) {
             $action = sanitize_text_field($_GET['action']);
             $ip_address = sanitize_text_field($_GET['ip_address']);
-            if ($action === 'block') {
-                $this->block_ip($ip_address);
-            } elseif ($action === 'unblock') {
-                $this->unblock_ip($ip_address);
+            try {
+                if ($action === 'block') {
+                    $this->block_ip($ip_address);
+                } elseif ($action === 'unblock') {
+                    $this->unblock_ip($ip_address);
+                }
+                
+                LogManager::logActivity('IP Action', "Performed action: $action on IP: $ip_address");
+                
+                wp_redirect(admin_url('admin.php?page=forms-manager'));
+                exit;
+            } catch (Anty_Spam_Rekurencja_Exception $e) {
+                LogManager::logError($e->getMessage());
+                $this->display_admin_error($e);
             }
-            
-            wp_redirect(admin_url('admin.php?page=forms-manager'));
-            exit;
         }
     }
 
     public function is_spam($data) {
-        return $this->is_ip_blocked($data['sender_ip']);
+        try {
+            return $this->is_ip_blocked($data['sender_ip']);
+        } catch (Anty_Spam_Rekurencja_Exception $e) {
+            LogManager::logError($e->getMessage());
+            return false;
+        }
     }
 }
