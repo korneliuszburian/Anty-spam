@@ -1,9 +1,9 @@
 <?php
 
 require_once 'class-base-manager.php';
-require_once 'class-anty-spam-rekurencja-ip-manager.php'; // Include the IP manager
-require_once 'class-anty-spam-rekurencja-word-manager.php'; // Include the Word manager
-require_once 'class-log-manager.php'; // Include the Log Manager
+require_once 'class-anty-spam-rekurencja-ip-manager.php'; 
+require_once 'class-anty-spam-rekurencja-word-manager.php'; 
+require_once 'class-log-manager.php'; 
 
 class Anty_Spam_Rekurencja_Forms_Manager extends BaseManager {
     private $ip_manager;
@@ -25,6 +25,8 @@ class Anty_Spam_Rekurencja_Forms_Manager extends BaseManager {
     public function enqueue_scripts() {
         wp_enqueue_script('chart-js', 'https://cdn.jsdelivr.net/npm/chart.js', [], null, true);
         wp_enqueue_script('chartjs-adapter-date-fns', 'https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns', ['chart-js'], null, true);
+        wp_enqueue_script('popup-script', plugins_url('/js/popup.js', __FILE__), ['jquery'], null, true);
+        wp_enqueue_style('popup-style', plugins_url('/css/popup.css', __FILE__));
     }
 
     public function enqueue_user_scripts() {
@@ -68,15 +70,29 @@ class Anty_Spam_Rekurencja_Forms_Manager extends BaseManager {
                     'form_data' => $row->form_data
                 ]);
                 $is_ip_blocked = $this->ip_manager->is_ip_blocked($row->sender_ip);
+                $form_data = $this->parse_form_data($row->form_data);
                 $submitted_forms_html .= '<tr><td>' . esc_html($row->id) . '</td><td>' . esc_html($row->time) . '</td><td>' . esc_html($row->sender_email) . '</td><td>' . esc_html($row->sender_ip) . '</td>';
-                $submitted_forms_html .= '<td>' . ($is_spam ? 'Yes' : 'No') . '</td><td>' . esc_html($row->form_data) . '</td>';
+                $submitted_forms_html .= '<td>' . ($is_spam ? 'Yes' : 'No') . '</td><td><button class="view-message" data-message="' . esc_html($form_data) . '">View Message</button></td>';
                 $submitted_forms_html .= '<td><a href="' . esc_url(admin_url('admin.php?page=forms-manager&action=' . ($is_ip_blocked ? 'unblock' : 'block') . '&ip_address=' . urlencode($row->sender_ip))) . '">' . ($is_ip_blocked ? 'Unblock IP' : 'Block IP') . '</a></td></tr>';
             }
         }
 
         $submitted_forms_html .= '</tbody></table>';
+        $submitted_forms_html .= '<div id="message-popup" class="message-popup"><div class="message-popup-content"><span class="close-popup">&times;</span><pre class="popup-message"></pre></div></div>';
 
         return $submitted_forms_html;
+    }
+
+    private function parse_form_data($form_data) {
+        $data = maybe_unserialize($form_data);
+        if (is_array($data)) {
+            $output = "";
+            foreach ($data as $key => $value) {
+                $output .= ucfirst(str_replace("-", " ", $key)) . ": " . $value . "\n";
+            }
+            return $output;
+        }
+        return $form_data;
     }
 
     private function render_chart() {

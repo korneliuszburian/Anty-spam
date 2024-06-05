@@ -7,10 +7,59 @@ class DNS_Block_Manager extends BaseManager {
 
     public function register_hooks() {
         add_action('init', [$this, 'check_dnsbl']);
+        add_action('admin_menu', [$this, 'add_admin_menu']);
+    }
+
+    public function add_admin_menu() {
+        add_options_page(
+            'DNS Block Settings',
+            'DNS Block Settings',
+            'manage_options',
+            'dns-block-settings',
+            [$this, 'display_page']
+        );
     }
 
     public function display_page() {
-        echo '<div class="wrap"><h1>DNS Block Settings</h1></div>';
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            if (isset($_POST['add_dns'])) {
+                $this->add_dns_entry($_POST['new_dns']);
+            } elseif (isset($_POST['delete_dns'])) {
+                $this->delete_dns_entry($_POST['dns_to_delete']);
+            }
+        }
+
+        $dnsbl_lookup = get_option('dnsbl_lookup', ['psbl.surriel.com', 'bl.spamcop.net', 'ix.dnsbl.manitu.net']);
+
+        echo '<div class="wrap"><h1>DNS Block Settings</h1>';
+        echo '<form method="post">';
+        echo '<h2>Current DNS Block List</h2>';
+        echo '<ul>';
+        foreach ($dnsbl_lookup as $dns) {
+            echo '<li>' . esc_html($dns) . ' <button type="submit" name="delete_dns" value="' . esc_attr($dns) . '">Delete</button></li>';
+        }
+        echo '</ul>';
+        echo '<h2>Add New DNS Entry</h2>';
+        echo '<input type="text" name="new_dns" required />';
+        echo '<button type="submit" name="add_dns">Add DNS</button>';
+        echo '</form>';
+        echo '</div>';
+    }
+
+    private function add_dns_entry($dns) {
+        $dnsbl_lookup = get_option('dnsbl_lookup', ['psbl.surriel.com', 'bl.spamcop.net', 'ix.dnsbl.manitu.net']);
+        if (!in_array($dns, $dnsbl_lookup)) {
+            $dnsbl_lookup[] = sanitize_text_field($dns);
+            update_option('dnsbl_lookup', $dnsbl_lookup);
+        }
+    }
+
+    private function delete_dns_entry($dns) {
+        $dnsbl_lookup = get_option('dnsbl_lookup', ['psbl.surriel.com', 'bl.spamcop.net', 'ix.dnsbl.manitu.net']);
+        if (($key = array_search($dns, $dnsbl_lookup)) !== false) {
+            unset($dnsbl_lookup[$key]);
+            update_option('dnsbl_lookup', $dnsbl_lookup);
+        }
     }
 
     public function is_spam($data) {
@@ -32,8 +81,7 @@ class DNS_Block_Manager extends BaseManager {
     }
 
     private function is_ip_listed($ip) {
-        // 'sbl.spamhaus.org', 'xbl.spamhaus.org'
-        $dnsbl_lookup = [ 'psbl.surriel.com', 'bl.spamcop.net', 'ix.dnsbl.manitu.net' ];
+        $dnsbl_lookup = get_option('dnsbl_lookup', ['psbl.surriel.com', 'bl.spamcop.net', 'ix.dnsbl.manitu.net']);
         foreach ($dnsbl_lookup as $host) {
             $lookup = implode('.', array_reverse(explode('.', $ip))) . '.' . $host;
             if (checkdnsrr($lookup . '.', 'A')) {
@@ -43,3 +91,4 @@ class DNS_Block_Manager extends BaseManager {
         return false;
     }
 }
+?>

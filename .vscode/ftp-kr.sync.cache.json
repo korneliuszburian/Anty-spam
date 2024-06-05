@@ -1401,6 +1401,12 @@
         },
         "advanced-custom-fields-pro": {},
         "anty-spam-rekurencja": {
+          ".DS_Store": {
+            "type": "-",
+            "size": 8196,
+            "lmtime": 1715610173362.2964,
+            "modified": false
+          },
           "LICENSE.txt": {
             "type": "-",
             "size": 18091,
@@ -1422,14 +1428,26 @@
             },
             "class-anty-spam-rekurencja-admin.php": {
               "type": "-",
-              "size": 2625,
-              "lmtime": 1717484569912.4106,
+              "size": 2849,
+              "lmtime": 1717504994490.8093,
+              "modified": false
+            },
+            "class-anty-spam-rekurencja-cf7.php": {
+              "type": "-",
+              "size": 1082,
+              "lmtime": 1717500486298.7544,
+              "modified": false
+            },
+            "class-anty-spam-rekurencja-dns-manager.php": {
+              "type": "-",
+              "size": 1412,
+              "lmtime": 1717504564074.3464,
               "modified": false
             },
             "class-anty-spam-rekurencja-forms-manager.php": {
               "type": "-",
-              "size": 9279,
-              "lmtime": 1717484341498.1016,
+              "size": 10249,
+              "lmtime": 1717583117988.6038,
               "modified": false
             },
             "class-anty-spam-rekurencja-honeypot-manager.php": {
@@ -1446,14 +1464,20 @@
             },
             "class-anty-spam-rekurencja-ip-manager.php": {
               "type": "-",
-              "size": 4997,
-              "lmtime": 1716971431522.2983,
+              "size": 4957,
+              "lmtime": 1717498784918.4312,
+              "modified": false
+            },
+            "class-anty-spam-rekurencja-validation-manager.php": {
+              "type": "-",
+              "size": 3137,
+              "lmtime": 1717585045646.4023,
               "modified": false
             },
             "class-anty-spam-rekurencja-word-manager.php": {
               "type": "-",
-              "size": 12947,
-              "lmtime": 1717494760953.195,
+              "size": 13084,
+              "lmtime": 1717498695989.7273,
               "modified": false
             },
             "class-base-manager.php": {
@@ -1464,8 +1488,8 @@
             },
             "class-log-manager.php": {
               "type": "-",
-              "size": 2325,
-              "lmtime": 1716887897816.4539,
+              "size": 2531,
+              "lmtime": 1717505363939.2424,
               "modified": false
             },
             "class-spam-interface.php": {
@@ -1486,6 +1510,12 @@
                 "size": 92,
                 "lmtime": 1717486352298.8281,
                 "modified": false
+              },
+              "popup.css": {
+                "type": "-",
+                "size": 680,
+                "lmtime": 1717573061804.473,
+                "modified": false
               }
             },
             "index.php": {
@@ -1501,6 +1531,18 @@
                 "lmtime": 1715595048010.4548,
                 "modified": false
               },
+              "form-interaction.js": {
+                "type": "-",
+                "size": 1626,
+                "lmtime": 1717505600849.136,
+                "modified": false
+              },
+              "popup.js": {
+                "type": "-",
+                "size": 807,
+                "lmtime": 1717573051836.4966,
+                "modified": false
+              },
               "word_manager-script.js": {
                 "type": "-",
                 "size": 481,
@@ -1509,23 +1551,23 @@
               },
               "word_manager.js": {
                 "type": "-",
-                "size": 652,
-                "lmtime": 1716894880930.0588,
+                "size": 651,
+                "lmtime": 1717505286015.686,
                 "modified": false
               }
             },
             "logs": {
               "activity_log.txt": {
                 "type": "-",
-                "size": 0,
+                "size": 505,
                 "lmtime": 1716887897816.6384,
-                "modified": false
+                "modified": true
               },
               "error_log.txt": {
                 "type": "-",
-                "size": 2002,
+                "size": 17368,
                 "lmtime": 0,
-                "modified": false
+                "modified": true
               }
             },
             "partials": {
@@ -1699,12 +1741,6 @@
             "type": "-",
             "size": 1066,
             "lmtime": 1715595047809.7327,
-            "modified": false
-          },
-          ".DS_Store": {
-            "type": "-",
-            "size": 8196,
-            "lmtime": 1715610173362.2964,
             "modified": false
           }
         },
