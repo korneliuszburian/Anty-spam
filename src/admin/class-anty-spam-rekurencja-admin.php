@@ -5,7 +5,7 @@ require_once 'class-anty-spam-rekurencja-word-manager.php';
 require_once 'class-anty-spam-rekurencja-forms-manager.php';
 require_once 'class-anty-spam-rekurencja-honeypot-manager.php';
 require_once 'class-anty-spam-rekurencja-dns-manager.php';
-require_once 'class-anty-spam-rekurencja-validation-manager.php';
+// require_once 'class-anty-spam-rekurencja-validation-manager.php';
 require_once 'class-log-manager.php';
 
 class Anty_Spam_Rekurencja_Admin {
@@ -22,7 +22,7 @@ class Anty_Spam_Rekurencja_Admin {
             'Forms Manager' => new Anty_Spam_Rekurencja_Forms_Manager(),
             'Honeypot Manager' => new Anty_Spam_Rekurencja_Honeypot_Manager(),
             'DNS Block Manager' => new DNS_Block_Manager(),
-            'Validation Manager' => new Validation_Manager(),
+            // 'Validation Manager' => new Validation_Manager(),
         ];
         $this->register_hooks();
     }

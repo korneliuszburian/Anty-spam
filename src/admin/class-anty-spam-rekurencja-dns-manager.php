@@ -3,24 +3,11 @@
 require_once 'class-base-manager.php';
 require_once 'class-log-manager.php'; // Include LogManager
 
-class DNS_Block_Manager extends BaseManager {
+class DNS_Block_Manager extends BaseManager
+{
 
-    public function register_hooks() {
-        add_action('init', [$this, 'check_dnsbl']);
-        add_action('admin_menu', [$this, 'add_admin_menu']);
-    }
-
-    public function add_admin_menu() {
-        add_options_page(
-            'DNS Block Settings',
-            'DNS Block Settings',
-            'manage_options',
-            'dns-block-settings',
-            [$this, 'display_page']
-        );
-    }
-
-    public function display_page() {
+    public function display_page()
+    {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             if (isset($_POST['add_dns'])) {
                 $this->add_dns_entry($_POST['new_dns']);
@@ -46,7 +33,8 @@ class DNS_Block_Manager extends BaseManager {
         echo '</div>';
     }
 
-    private function add_dns_entry($dns) {
+    private function add_dns_entry($dns)
+    {
         $dnsbl_lookup = get_option('dnsbl_lookup', ['psbl.surriel.com', 'bl.spamcop.net', 'ix.dnsbl.manitu.net']);
         if (!in_array($dns, $dnsbl_lookup)) {
             $dnsbl_lookup[] = sanitize_text_field($dns);
@@ -54,7 +42,8 @@ class DNS_Block_Manager extends BaseManager {
         }
     }
 
-    private function delete_dns_entry($dns) {
+    private function delete_dns_entry($dns)
+    {
         $dnsbl_lookup = get_option('dnsbl_lookup', ['psbl.surriel.com', 'bl.spamcop.net', 'ix.dnsbl.manitu.net']);
         if (($key = array_search($dns, $dnsbl_lookup)) !== false) {
             unset($dnsbl_lookup[$key]);
@@ -62,12 +51,14 @@ class DNS_Block_Manager extends BaseManager {
         }
     }
 
-    public function is_spam($data) {
+    public function is_spam($data)
+    {
         $ip = $data['ip'] ?? '';
         return $this->is_ip_listed($ip);
     }
 
-    public function check_dnsbl() {
+    public function check_dnsbl()
+    {
         $user_ip = $_SERVER['REMOTE_ADDR'];
         try {
             if ($blocked_by = $this->is_ip_listed($user_ip)) {
@@ -80,7 +71,8 @@ class DNS_Block_Manager extends BaseManager {
         }
     }
 
-    private function is_ip_listed($ip) {
+    private function is_ip_listed($ip)
+    {
         $dnsbl_lookup = get_option('dnsbl_lookup', ['psbl.surriel.com', 'bl.spamcop.net', 'ix.dnsbl.manitu.net']);
         foreach ($dnsbl_lookup as $host) {
             $lookup = implode('.', array_reverse(explode('.', $ip))) . '.' . $host;
@@ -91,4 +83,3 @@ class DNS_Block_Manager extends BaseManager {
         return false;
     }
 }
-?>

@@ -1404,7 +1404,7 @@
           ".DS_Store": {
             "type": "-",
             "size": 8196,
-            "lmtime": 1715610173362.2964,
+            "lmtime": 1722412611467.543,
             "modified": false
           },
           "LICENSE.txt": {
@@ -1428,8 +1428,8 @@
             },
             "class-anty-spam-rekurencja-admin.php": {
               "type": "-",
-              "size": 2849,
-              "lmtime": 1717504994490.8093,
+              "size": 2855,
+              "lmtime": 1722412572523.9111,
               "modified": false
             },
             "class-anty-spam-rekurencja-cf7.php": {
@@ -1440,14 +1440,14 @@
             },
             "class-anty-spam-rekurencja-dns-manager.php": {
               "type": "-",
-              "size": 1412,
-              "lmtime": 1717504564074.3464,
+              "size": 3333,
+              "lmtime": 1717591274624.0771,
               "modified": false
             },
             "class-anty-spam-rekurencja-forms-manager.php": {
               "type": "-",
               "size": 10249,
-              "lmtime": 1717583117988.6038,
+              "lmtime": 1722411445092.7136,
               "modified": false
             },
             "class-anty-spam-rekurencja-honeypot-manager.php": {
@@ -1470,14 +1470,14 @@
             },
             "class-anty-spam-rekurencja-validation-manager.php": {
               "type": "-",
-              "size": 3137,
-              "lmtime": 1717585045646.4023,
+              "size": 4605,
+              "lmtime": 1717590680082.3577,
               "modified": false
             },
             "class-anty-spam-rekurencja-word-manager.php": {
               "type": "-",
               "size": 13084,
-              "lmtime": 1717498695989.7273,
+              "lmtime": 1722411445093.5105,
               "modified": false
             },
             "class-base-manager.php": {
@@ -1559,7 +1559,7 @@
             "logs": {
               "activity_log.txt": {
                 "type": "-",
-                "size": 505,
+                "size": 45194,
                 "lmtime": 1716887897816.6384,
                 "modified": true
               },
@@ -1624,8 +1624,8 @@
             },
             "class-anty-spam-rekurencja.php": {
               "type": "-",
-              "size": 6343,
-              "lmtime": 1715595742411.1921,
+              "size": 6349,
+              "lmtime": 1722411423661,
               "modified": false
             },
             "class-spam-detector-interface.php": {
